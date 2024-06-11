@@ -19,12 +19,12 @@ public class FelineTest {
 
     @Test
     public void testEatMeat() throws Exception {
-        // Подготавливаем заглушку для метода getFood
+
         Feline felineSpy = spy(feline);
         List<String> expectedFood = List.of("Мясо");
         doReturn(expectedFood).when(felineSpy).getFood("Хищник");
 
-        // Проверяем, что метод eatMeat возвращает правильное значение
+
         assertEquals(expectedFood, felineSpy.eatMeat());
     }
 
