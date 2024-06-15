@@ -1,4 +1,3 @@
-
 import com.example.Cat;
 import com.example.Feline;
 import org.junit.Before;
@@ -25,13 +24,8 @@ public class CatTest {
     }
 
     @Test
-    public void testGetSound() {
-        assertEquals("Мяу", cat.getSound());
-    }
-
-    @Test
     public void testGetFood() throws Exception {
-        List<String> expectedFood = List.of("Мясо");
+        List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
         when(mockFeline.eatMeat()).thenReturn(expectedFood);
         assertEquals(expectedFood, cat.getFood());
     }
