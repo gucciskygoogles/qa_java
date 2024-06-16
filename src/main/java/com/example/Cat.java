@@ -9,7 +9,7 @@ public class Cat {
     public Cat(Feline feline) {
         this.predator = feline;
     }
-
+    // коммент для коммита
     public String getSound() {
         return "Мяу";
     }
