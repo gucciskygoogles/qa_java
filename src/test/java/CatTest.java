@@ -29,4 +29,10 @@ public class CatTest {
         when(mockFeline.eatMeat()).thenReturn(expectedFood);
         assertEquals(expectedFood, cat.getFood());
     }
+
+    @Test
+    public void testGetSound() {
+        String expectedSound = "Мяу";
+        assertEquals(expectedSound, cat.getSound());
+    }
 }
